@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holaa</title>
+    <link rel="stylesheet" href="{% static 'barcenas/estilos.css' %}">
+</head>
+
+<body> <!--Contenido-->
+    <header><!-- ENCABEZADO -->
+        <h1>registra tus datos</h1>
+        <nav><!-- MENÚ DE NAVEGACIÓN -->
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="registro">registro</a></li>
+                <li><a href="musica">musica</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+<form method="post">
+    <label>nombre:</label>
+    <input type="text" name="'nombre" placeholder="escribe tu nombre..." required>
+    <label>apellido paterno:</label>
+    <input type="text" name="'apellidop" placeholder="escribe tu apellido..." required>
+    <label>apellido materno:</label>
+    <input type="text" name="apellidom" placeholder="escribe tu apellido..." >
+    <label>edad:</label>
+    <input type="number" name="edad" min="14" max="20" placeholder="cual es tu edad..." required>
+    <label >genero</label><br><br>
+    <input type="radio" name="genero" value="femenino">femenino <br><br>
+    <input type="radio" name="genero" value="masculino">masculino<br><br>
+
+    <label>INTERESES</label><br><br>
+    <input type="checkbox" name="intereses" value="musica">musica<br> <br>
+    <input type="checkbox" name="intereses" value="video juegos">video juegos<br><br>
+    <input type="checkbox" name="intereses" value="comida">comida<br><br>
+    <input type="checkbox" name="intereses" value="tomar">tomar<br><br>
+    
+    <button type ="submit">guardar</button>
+    
+</form>
+   
+    
+    <footer>  <!-- PIE DE PÁGINA -->
+        <p>doname pal gta VI</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holaa</title>
+    <link rel="stylesheet" href="{% static 'barcenas/estilos.css' %}">
+</head>
+
+<body> <!--Contenido-->
+    <header><!-- ENCABEZADO -->
+        <h1>cuales son tus gustos musicales</h1>
+        <nav><!-- MENÚ DE NAVEGACIÓN -->
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="registro">registro</a></li>
+                <li><a href="mmusica">musica</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+<form method="post">
+    <label>cual es tu genero favorito de musica?</label>
+    <input type="text" name="GM" placeholder="escribe tu genero favorito..." required>
+    <label>cuantas horas escuchas musica al dia</label>
+    <input type="number" name="horas" placeholder="escribe las horas..." required>
+    <label>quien es tu artista favorito?</label>
+    <input type="text" name="artista" placeholder="escribe su nombre..." >
+    <label>cuando lo empesaste a escuchar?</label>
+    <input type="date" name="cuando" placeholder="cual es tu edad..." required>
+    <label >plataforma</label><br><br>
+    <label>que correo usas en tu plataforma abitual?</label>
+    <input type="email" name="plataforma" placeholder="cual es tu edad..." required>
+    <label>que plataforma usas</label><br><br>
+    <input type="radio" name="donde" value="spotify" required>spotify<br><br>
+    <input type="radio" name="donde" value="youtube" required>youtube<br><br>
+    <input type="radio" name="donde" value="soundclod" required>soundclod<br><br>
+
+    <label>que haces mientrs escuchas musica?</label><br><br>
+    <input type="checkbox" name="mientras" value="dormir">dormir<br> <br>
+    <input type="checkbox" name="intereses" value="bailar">bailar<br><br>
+    <input type="checkbox" name="intereses" value="jugar">jugar<br><br>
+    <input type="checkbox" name="intereses" value="tomar">tomar<br><br>
+    <label>que te gusta mas de escuchar musica?</label>
+    <input type="textarea" name="gusto" placeholder="escribe aqui" required>
+    
+    <button type ="submit">guardar</button>
+    
+</form>
+   
+    
+    <footer>  <!-- PIE DE PÁGINA -->
+        <p>doname pal gta VI</p>
+    </footer>
+
+</body>
+</html>
